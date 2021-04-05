@@ -6,12 +6,15 @@
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'has-js ';
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="description" content="{{ site.description or description or metadata.description }}">
+  <title>{{ site.title or title or metadata.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
   <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/materialize.css" type="text/css" />
 </head>
 <body id="top" itemscope itemtype="http://schema.org/WebPage">
   {{ content | safe }}
   <script src="/scripts/index.js"></script>
+  <script src="/scripts/materialize.js"></script>
 </body>
 </html>
