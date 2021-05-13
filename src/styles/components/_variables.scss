@@ -28,6 +28,7 @@
 //  22. Flow Text
 //  23. Collections
 //  24. Progress Bar
+//  25. Body
 
 
 
@@ -100,7 +101,7 @@ $button-floating-radius: 50% !default;
 // ==========================================================================
 
 $card-padding: 24px !default;
-$card-bg-color: #fff !default;
+$card-bg-color: color("grey", "darken-3") !default;
 $card-link-color: color("orange", "accent-2") !default;
 $card-link-color-light: lighten($card-link-color, 20%) !default;
 
@@ -249,6 +250,7 @@ $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1rem !default;
 $navbar-font-color: #fff !default;
 $navbar-brand-font-size: 2.1rem !default;
+$navbar-bg-color: color('grey', 'darken-4');
 
 // 14. Side Navigation
 // ==========================================================================
@@ -347,3 +349,8 @@ $collection-line-height: 1.5rem !default;
 // ==========================================================================
 
 $progress-bar-color: $secondary-color !default;
+
+// 25. Body
+// ==========================================================================
+$body-bg-color: color("grey", "darken-4");
+$body-color:  #fff;
