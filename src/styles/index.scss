@@ -3,6 +3,10 @@ html {
   scroll-padding-top: 64px;
 }
 
+img {
+  width: 100%;
+}
+
 #logo-container {
   img {
     height: 1.96em;
@@ -30,17 +34,7 @@ html {
   }
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,0.9);
-
-  &.section {
-    width: 100%;
-
-  }
-
+.page-footer {
   ul {
     list-style: none;
     margin: 0;
@@ -50,6 +44,18 @@ html {
 
   li {
     padding: 0 20px;
+  }
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,0.9);
+
+  &.section {
+    width: 100%;
+
   }
 }
 
@@ -73,5 +79,21 @@ html {
   &.md-light {
     color: rgba(255, 255, 255, 1);
     &.md-inactive { color: rgba(255, 255, 255, 0.3); }
+  }
+}
+
+/* Rules for sizing the icon. */
+.fab {
+  vertical-align: bottom;
+  font-size: 18px;
+
+  /* Rules for using icons as black on a light background. */
+  &.fa-dark {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  /* Rules for using icons as white on a dark background. */
+  &.fa-light {
+    color: rgba(255, 255, 255, 1);
   }
 }

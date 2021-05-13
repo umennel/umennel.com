@@ -8,17 +8,7 @@ permalink: /
     <div class="container">
       <h1 class="header center">Plan B</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ipsam amet.</h5>
-
-        <ul class="share-buttons">
-        <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Share on Facebook"><i class="material-icons md-light">menu</i></a></li>
-        <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><i class="material-icons md-light">menu</i></a></li>
-        <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><i class="material-icons md-light">menu</i></a></li>
-        </ul>
-
-      </div>
-      <div class="row center">
-        <a href="#blog"><i class="material-icons md-96 md-light">expand_more</i></a>
+        <h5 class="header col s12 light">Sharing my Legacy.</h5>
       </div>
     </div>
   </div>
@@ -29,15 +19,15 @@ permalink: /
   <div class="container">
     <div class="row">
       <div class="col s12 m12 l8 offset-l2">
-        {% set posts = collections.posts | head(-2) %}
+        {% set posts = collections.posts | head(-5) %}
         {% include "posts.njk" %}
       </div>
     </div>
 
-    {% if collections.posts.length > 0 %}
+    {% if collections.posts.length > 5 %}
     <div class="row center-align">
       <a href="{{ '/archive/blog/' | url }}" class="btn-large waves-effect waves-light grey darken-2">
-        <i class="material-icons right">chevron_right</i>
+        <i class="material-icons right">expand_more</i>
         Older posts
       </a>
     </div>
@@ -50,19 +40,9 @@ permalink: /
     <div class="container">
       <div class="row center">
         <h4>About Me</h4>
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <h5 class="header col s12 light">Programmer. Mentor. Dad.</h5>
       </div>
     </div>
   </div>
   <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 2"></div>
-</div>
-
-<div class="section">
-  <div class="container">
-    <div class="row center">
-      <div class="col s12">
-        <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-      </div>
-    </div>
-  </div>
 </div>
