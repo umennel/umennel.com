@@ -5,8 +5,6 @@ description: Thoughts about moving from Containers to Servless
 date: 2020-08-28
 ---
 
-# Serverless
-
 Pros:
 * May Save Costs (must check), especially with unpredictable traffic
 * Unit testing

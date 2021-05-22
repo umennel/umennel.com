@@ -6,11 +6,8 @@ description: I am a very simple card. I am good at containing small bits of info
 date: 2021-13-05
 ---
 
-# Material Design
-
 ## Quickstart
 Hello, here is the content
-
 
 ## Where to go next
 Ge here ...
