@@ -19,11 +19,15 @@ permalink: /
   <div class="container">
     <div class="row">
       <div class="col s12 m12 l8 offset-l2">
+        {% include "tags.njk" %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l8 offset-l2">
         {% set posts = collections.posts | head(-5) %}
         {% include "posts.njk" %}
       </div>
     </div>
-
     {% if collections.posts.length > 5 %}
     <div class="row center-align">
       <a href="{{ '/archive/blog/' | url }}" class="btn-large waves-effect waves-light grey darken-2">

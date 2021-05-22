@@ -1,3 +1,5 @@
+@import "materialize.scss";
+
 html {
 	scroll-behavior: smooth;
   scroll-padding-top: 64px;
@@ -47,6 +49,45 @@ img {
   }
 }
 
+ul.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    padding: 4px;
+  }
+}
+
+.post-meta {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  .date {
+    flex: 1 0 auto;
+  }
+
+  .tag {
+    min-width: 3rem;
+    padding: 0 6px;
+    margin: 0 0 4px 4px;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 22px;
+    height: 22px;
+    float: right;
+    box-sizing: border-box;
+    font-weight: 300;
+    color: #fff;
+    background-color: $secondary-color;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -55,7 +96,6 @@ img {
 
   &.section {
     width: 100%;
-
   }
 }
 

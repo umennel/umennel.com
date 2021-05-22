@@ -2,6 +2,8 @@
 layout: layouts/post.njk
 title: From Containers to Servless
 description: Thoughts about moving from Containers to Servless
+tags:
+  - foo
 date: 2020-08-28
 ---
 

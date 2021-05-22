@@ -1,0 +1,5 @@
+<ul class="tags">
+{% for tag in collections.tags | filterTags | head(-5) %}
+  <li><a class="btn" href="#!">{{ tag }}</a></li>
+{% endfor %}
+</ul>

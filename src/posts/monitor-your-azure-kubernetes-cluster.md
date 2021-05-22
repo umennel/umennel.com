@@ -2,6 +2,10 @@
 layout: layouts/post.njk
 title: Monitor your Azure Kubernetes Cluster
 description: Once you have your critical application running on a Kubernetes cluster, it is important to monitor its performance metrics in order to sustain stable operation. Without enough visibility, you will never be able to identify resource bottlenecks or determine the maximum load that the cluster can sustain.
+tags:
+  - Kubernetes
+  - Azure
+  - Monitoring
 date: 2020-07-08
 ---
 

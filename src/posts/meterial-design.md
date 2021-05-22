@@ -3,6 +3,8 @@ layout: layouts/post.njk
 title: Material Design
 description: I am a very simple card. I am good at containing small bits of information.
             I am convenient because I require little markup to use effectively.
+tags:
+  - another tag
 date: 2021-13-05
 ---
 

@@ -4,6 +4,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
+  eleventyConfig.setDataDeepMerge(true);
+
   eleventyConfig.addPassthroughCopy('src/images')
 
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -22,6 +24,24 @@ module.exports = function(eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter("filterTags", tags => {
+    // should match the list in tags.njk
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+  })
+
+  // Create an array of all tags
+  eleventyConfig.addCollection("tags", function(collection) {
+    let tagSet = new Set();
+
+    for (c of collection.getAll()) {
+      for (tag of c.data.tags || []) {
+        tagSet.add(tag);
+      }
+    }
+
+    return [...tagSet];
   });
 
   return {
