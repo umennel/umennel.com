@@ -24,9 +24,9 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="/#blog">Blog</a></li>
           <li><a href="/#about">About Me</a></li>
-          <li><a href="https://www.github.com/umennel" target="_blank" title="GitHub"><i class="fab fa-light fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/uchemennel/" target="_blank" title="LinkedIn" ><i class="fab fa-light fa-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/umennel" target="_blank" title="Twitter"><i class="fab fa-light fa-twitter"></i></a></li>
+          {% for social in site.socials %}
+          <li><a href="{{ social.url }}" target="_blank" title="{{ social.name }}"><i class="fab fa-light fa-{{ social.name }}"></i></a></li>
+          {% endfor %}
         </ul>
         </div>
         </div>
@@ -36,6 +36,9 @@
     <ul id="nav-mobile" class="sidenav">
       <li><a class="sidenav-close" href="/#blog">Blog</a></li>
       <li><a class="sidenav-close" href="/#about">About Me</a></li>
+      {% for social in site.socials %}
+          <li><a class="sidenav-close" href="{{ social.url }}" target="_blank" title="{{ social.name }}"><i class="fab fa-dark fa-{{ social.name }}"></i></a></li>
+      {% endfor %}
     </ul>
 
   {{ content | safe }}

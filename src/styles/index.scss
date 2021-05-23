@@ -139,11 +139,11 @@ ul.tags {
 
   /* Rules for using icons as black on a light background. */
   &.fa-dark {
-    color: rgba(0, 0, 0, 0.54);
+    color: #000;
   }
 
   /* Rules for using icons as white on a dark background. */
   &.fa-light {
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
   }
 }
