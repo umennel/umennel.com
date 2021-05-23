@@ -36,16 +36,14 @@ img {
   }
 }
 
-.page-footer {
-  ul {
+ul.socials {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline-flex
-  }
+  display: inline-flex;
 
   li {
-    padding: 0 20px;
+    padding: 0 9px;
   }
 }
 

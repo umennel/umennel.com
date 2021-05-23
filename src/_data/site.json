@@ -4,5 +4,19 @@
   "description": "Uche Mennel's portfolio",
   "url": "https://umennel.com",
   "locale": "en",
-  "author": "Uche Mennel"
+  "author": "Uche Mennel",
+  "socials": [
+    {
+      "name": "github",
+      "url": "https://www.github.com/umennel"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/uchemennel/"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/umennel"
+    }
+  ]
 }
