@@ -2,7 +2,14 @@
 
 html {
 	scroll-behavior: smooth;
-  scroll-padding-top: 64px;
+
+  @media only screen and (min-width: 0) {
+    scroll-padding-top: 56px;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    scroll-padding-top: 64px;
+  }
 }
 
 img {
